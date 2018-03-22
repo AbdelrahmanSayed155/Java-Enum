@@ -1,0 +1,26 @@
+
+emun have fixed data 
+
+can have constructor for set data for every element 
+// constructor must be private of enum
+
+---------------
+Differences:
+
+Enums extend java.lang.Enum and gain all of its nice features:
+Automatic singleton behaviour through correct serialization
+Automatic human-readable .toString method on enum values without the need to duplicate your enum names
+.name and .ordinal special-purpose methods
+Usable in high-performance bitset-based EnumSet and EnumMap classes
+
+Enums are treated by the language specially:
+Enums use a special syntax which simplifies instance creation without writing dozens of public static final fields
+Enums can be used in switch statements
+Enums cannot be instantiated outside the enumeration list except by using reflection
+Enums cannot beEnum)[] values();
+public stati extended outside the enumeration list
+Java automatically compiles extra stuff into enums:
+public static (c (Enum) valueOf(java.lang.String);
+private static final (Enum)[] $VALUES; (values() returns a clone of this)
+Most of these can be emulated with a suitably designed class, but Enum just makes it really easy to create a class with this set of particularly desirable properties.
+---------------
